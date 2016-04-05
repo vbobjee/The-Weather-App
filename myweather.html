@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+    
+
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="tempInfo">
+            <h3 id="locInfo"></h3>
+            <div id="obsTime"></div>
+            <img src="" class="weatherIcon" height="60" width="60" /><span class="tempF"></span><span class="tempC"></span><sup>&deg;F</sup><br />
+        </div>
+        <div class="search">
+            <input type="text" class="searchInput" id="city" />
+            <div id="options">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="measurement"><button class="btn btn-small" id="tempMeasure">&deg;C</button></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>DAY</th>
+                        <th>CONDITION</th>
+                        <th>TEMP</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
