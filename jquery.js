@@ -59,7 +59,7 @@ $(document).ready(function () {
 
 
     var query =  function (loc,cb) {
-            var url = "http://api.wunderground.com/api/2f554b096646c22c/forecast/conditions/q/" + loc + ".json";
+            var url = "https://api.wunderground.com/api/2f554b096646c22c/forecast/conditions/q/" + loc + ".json";
             $.ajax({
                 url: url,
                 dataType: "jsonp",
