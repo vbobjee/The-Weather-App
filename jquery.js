@@ -24,12 +24,12 @@ $(document).ready(function () {
             var bg = '';
             if (20 <= time || time <= 5) {
 
-                $(".weatherIcon").attr("src", "http://icons.wxug.com/i/c/i/nt_" + data['current_observation']['icon'] + ".gif");
+                $(".weatherIcon").attr("src", "https://icons.wxug.com/i/c/i/nt_" + data['current_observation']['icon'] + ".gif");
                 bg = setBg('nt_' + data['current_observation']['icon']);
                 $('body').css({ 'background-image': 'url('+ bg + ')', 'background-size': 'cover' });
             }
             else {
-                $(".weatherIcon").attr("src", "http://icons.wxug.com/i/c/i/" + data['current_observation']['icon'] + ".gif");
+                $(".weatherIcon").attr("src", "https://icons.wxug.com/i/c/i/" + data['current_observation']['icon'] + ".gif");
                 bg = setBg(data['current_observation']['icon']); 
                 $('body').css({ 'background-image': 'url('+ bg +')', 'background-size': 'cover' });
             }
@@ -41,7 +41,7 @@ $(document).ready(function () {
        $('.table tbody')
                         .append($('<tr>')
                             .append($('<td>').append(data['forecast']['simpleforecast']['forecastday'][i]['date']['weekday']))
-                            .append($('<td>').append($('<img>').attr('src', "http://icons.wxug.com/i/c/i/" + data['forecast']['simpleforecast']['forecastday'][i]['icon']).attr('class', 'forecastImg')))
+                            .append($('<td>').append($('<img>').attr('src', "https://icons.wxug.com/i/c/i/" + data['forecast']['simpleforecast']['forecastday'][i]['icon']).attr('class', 'forecastImg')))
                             .append($('<td>').attr('id', 'tempInfo')
                                   .append($('<span class="F">').append(data['forecast']['simpleforecast']['forecastday'][i]['high']['fahrenheit']))
                                   .append($('<span class="C">').append(data['forecast']['simpleforecast']['forecastday'][i]['high']['celsius'])))
